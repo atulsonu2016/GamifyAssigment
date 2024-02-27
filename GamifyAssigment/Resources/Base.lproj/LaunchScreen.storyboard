@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_image" translatesAutoresizingMaskIntoConstraints="NO" id="Pdn-ZG-142">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vx0-vU-Gax">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="etw-gl-ivm">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7lo-vV-akE">
+                                <rect key="frame" x="134.66666666666666" y="378.33333333333331" width="123.99999999999997" height="120.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="byg-np-qSw">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="75"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAMIFY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWq-xK-kEL">
+                                        <rect key="frame" x="0.0" y="75" width="124" height="45.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vx0-vU-Gax" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9ki-XA-9eZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Pdn-ZG-142" secondAttribute="bottom" id="BGl-UV-TWU"/>
+                            <constraint firstItem="vx0-vU-Gax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J5d-FH-g3X"/>
+                            <constraint firstItem="vx0-vU-Gax" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YSZ-6g-Mll"/>
+                            <constraint firstItem="Pdn-ZG-142" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="azs-aK-kd5"/>
+                            <constraint firstItem="7lo-vV-akE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="g4D-Bn-cxF"/>
+                            <constraint firstAttribute="bottom" secondItem="vx0-vU-Gax" secondAttribute="bottom" id="gZ0-mx-FDQ"/>
+                            <constraint firstItem="Pdn-ZG-142" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="kmx-Ab-JUK"/>
+                            <constraint firstItem="Pdn-ZG-142" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l2v-XG-H0q"/>
+                            <constraint firstItem="7lo-vV-akE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tOb-J2-rIF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLogo.png" width="75" height="75"/>
+        <image name="bg_image" width="1000" height="666.66668701171875"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
